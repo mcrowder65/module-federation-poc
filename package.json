@@ -7,9 +7,7 @@
   ],
   "private": true,
   "scripts": {
-    "postinstall": "patch-package",
-    "storybook:server": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@emotion/react": "11.7.1",
@@ -26,12 +24,6 @@
     "@babel/preset-env": "7.16.7",
     "@babel/preset-react": "7.16.7",
     "@emotion/babel-preset-css-prop": "11.2.0",
-    "@storybook/addon-actions": "6.4.9",
-    "@storybook/addon-essentials": "6.4.9",
-    "@storybook/addon-links": "6.4.9",
-    "@storybook/node-logger": "6.4.9",
-    "@storybook/preset-create-react-app": "4.0.0",
-    "@storybook/react": "6.5.0-alpha.5",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "12.1.2",
     "@testing-library/user-event": "^13.5.0",
