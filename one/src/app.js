@@ -1,13 +1,13 @@
 import React from "react"
-const RemoteApp = React.lazy(() => import("app2/app"))
+import Providers from "src/providers"
+import Routes from "src/routes"
 
 function App() {
   return (
     <div>
-      I am app one
-      <React.Suspense fallback={"loading..."}>
-        <RemoteApp />
-      </React.Suspense>
+      <Providers>
+        <Routes />
+      </Providers>
     </div>
   )
 }

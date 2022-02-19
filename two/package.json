@@ -7,7 +7,7 @@
     "lint": "eslint src test *.js api",
     "dev": "../node_modules/.bin/react-app-rewired start -p 9229 --debug-apis",
     "start": "vercel dev",
-    "build": "react-app-rewired build",
+    "build": "../node_modules/.bin/react-app-rewired build",
     "build:analyze": "ANALYZE=true yarn build",
     "jest": "CI=true react-app-rewired test --silent",
     "test": "yarn lint && yarn jest && yarn build"
