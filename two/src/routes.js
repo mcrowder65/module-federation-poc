@@ -6,7 +6,7 @@ const Routes = () => {
   return (
     <Switch>
       <Route
-        path="/"
+        path="/two"
         component={() => (
           <React.Suspense fallback={null}>
             <Root />

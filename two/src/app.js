@@ -1,12 +1,7 @@
 import React from "react"
-import Providers from "src/providers"
-import Routes from "src/routes"
+
 function App() {
-  return (
-    <Providers>
-      <Routes />
-    </Providers>
-  )
+  return <div>i am app two</div>
 }
 
 export default App

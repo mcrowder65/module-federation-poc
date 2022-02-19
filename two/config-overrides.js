@@ -10,10 +10,20 @@ let config = override(
   (config) => {
     config.plugins.push(
       new ModuleFederationPlugin({
-        name: "two",
-        shared: [],
+        name: "app2",
+        filename: "remoteEntry.js",
+        exposes: {
+          "./app": "./src/app",
+        },
+        shared: {
+          react: { singleton: true },
+          "react-dom": {
+            singleton: true,
+          },
+        },
       }),
     )
+    config.output.publicPath = "auto"
     return config
   },
   (config) => {

@@ -30,6 +30,7 @@
     "babel-loader": "8.2.3",
     "customize-cra": "1.0.0",
     "eslint-config-mcrowder65": "4.0.1",
+    "external-remotes-plugin": "^1.0.0",
     "http-proxy-middleware": "^2.0.1",
     "jest-axe": "5.0.1",
     "patch-package": "^6.4.7",

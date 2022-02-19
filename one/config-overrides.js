@@ -4,8 +4,26 @@ const {
   addBundleVisualizer,
   addBabelPreset,
 } = require("customize-cra")
+const { ModuleFederationPlugin } = require("webpack").container
 
 let config = override(
+  (config) => {
+    config.plugins.push(
+      new ModuleFederationPlugin({
+        name: "app1",
+        remotes: {
+          app2: "app2@http://localhost:1234/remoteEntry.js",
+        },
+        shared: {
+          react: { singleton: true },
+          "react-dom": {
+            singleton: true,
+          },
+        },
+      }),
+    )
+    return config
+  },
   (config) => {
     config.plugins = config.plugins.filter((plugin) => {
       return plugin.key !== "ESLintWebpackPlugin"
