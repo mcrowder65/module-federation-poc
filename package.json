@@ -1,16 +1,13 @@
 {
-  "name": "frontendmentor-template",
+  "name": "module-federation-poc",
   "version": "0.1.0",
+  "packages": [
+    "one",
+    "two"
+  ],
   "private": true,
   "scripts": {
     "postinstall": "patch-package",
-    "lint": "eslint src test *.js api",
-    "dev": "react-app-rewired start -p 9229 --debug-apis",
-    "start": "vercel dev",
-    "build": "react-app-rewired build",
-    "build:analyze": "ANALYZE=true yarn build",
-    "jest": "CI=true react-app-rewired test --silent",
-    "test": "yarn lint && yarn jest && yarn build",
     "storybook:server": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },

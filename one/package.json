@@ -1,0 +1,28 @@
+{
+  "name": "one",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src test *.js api",
+    "dev": "react-app-rewired start -p 9898 --debug-apis",
+    "start": "vercel dev",
+    "build": "react-app-rewired build",
+    "build:analyze": "ANALYZE=true yarn build",
+    "jest": "CI=true react-app-rewired test --silent",
+    "test": "yarn lint && yarn jest && yarn build"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

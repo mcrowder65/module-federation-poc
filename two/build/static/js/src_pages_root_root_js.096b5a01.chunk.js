@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktwo=self.webpackChunktwo||[]).push([["src_pages_root_root_js"],{158:function(t,o,e){e.r(o);e(925);var r=e(875);o.default=function(){return(0,r.tZ)("div",null,"I am the root of page two")}}}]);
+//# sourceMappingURL=src_pages_root_root_js.096b5a01.chunk.js.map

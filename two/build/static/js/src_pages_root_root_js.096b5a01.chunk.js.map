@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/src_pages_root_root_js.096b5a01.chunk.js","mappings":"8IAKA,UAJa,WACX,OAAO","sources":["pages/root/root.js"],"sourcesContent":["import React from \"react\"\nconst Root = () => {\n  return <div>I am the root of page two</div>\n}\n\nexport default Root\n"],"names":[],"sourceRoot":""}

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Providers from "src/providers"
+import Providers from "one/src/providers"
 const Div = styled.div`
   * {
     -moz-box-sizing: border-box;
