@@ -4,11 +4,9 @@ import Routes from "src/routes"
 
 function App() {
   return (
-    <div>
-      <Providers>
-        <Routes />
-      </Providers>
-    </div>
+    <Providers>
+      <Routes />
+    </Providers>
   )
 }
 

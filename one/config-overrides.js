@@ -15,9 +15,17 @@ let config = override(
           app2: "app2@http://localhost:1234/remoteEntry.js",
         },
         shared: {
-          react: { singleton: true },
+          react: {
+            singleton: true,
+            requiredVersion: "17.0.2",
+          },
           "react-dom": {
             singleton: true,
+            requiredVersion: "17.0.2",
+          },
+          "@emotion/react": {
+            singleton: true,
+            requiredVersion: "11.7.1",
           },
         },
       }),

@@ -1,6 +1,6 @@
 const theme = {
   palette: {
-    primary: "papayawhip",
+    primary: "orange",
   },
 }
 

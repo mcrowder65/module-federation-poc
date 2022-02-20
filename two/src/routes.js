@@ -1,10 +1,10 @@
 import React from "react"
-import { Route, Switch } from "react-router-dom"
+import { Route } from "react-router-dom"
 
 const Root = React.lazy(() => import("src/pages/root/root"))
 const Routes = () => {
   return (
-    <Switch>
+    <>
       <Route
         path="/two"
         component={() => (
@@ -14,7 +14,7 @@ const Routes = () => {
         )}
         exact
       />
-    </Switch>
+    </>
   )
 }
 

@@ -1,12 +1,12 @@
 import React from "react"
-import Providers from "src/providers"
-import Root from "src/pages/root/root"
+import Routes from "src/routes"
+import { BrowserRouter } from "react-router-dom"
 
 function App() {
   return (
-    <Providers>
-      <Root />
-    </Providers>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   )
 }
 

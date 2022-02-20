@@ -7,15 +7,6 @@ const Routes = () => {
   return (
     <Switch>
       <Route
-        path="/two"
-        component={() => (
-          <React.Suspense fallback={null}>
-            <RemoteApp />
-          </React.Suspense>
-        )}
-        exact
-      />
-      <Route
         path="/"
         component={() => (
           <React.Suspense fallback={null}>
@@ -24,6 +15,9 @@ const Routes = () => {
         )}
         exact
       />
+      <React.Suspense fallback={null}>
+        <RemoteApp />
+      </React.Suspense>
     </Switch>
   )
 }
