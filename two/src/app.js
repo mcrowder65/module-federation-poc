@@ -1,13 +1,8 @@
 import React from "react"
-import Routes from "src/routes"
-import { BrowserRouter } from "react-router-dom"
+import Root from "src/pages/root/root"
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes />
-    </BrowserRouter>
-  )
+  return <Root />
 }
 
 export default App

@@ -1,9 +1,10 @@
 {
   "name": "module-federation-poc",
   "version": "0.1.0",
-  "packages": [
+  "workspaces": [
     "one",
-    "two"
+    "two",
+    "three"
   ],
   "private": true,
   "scripts": {

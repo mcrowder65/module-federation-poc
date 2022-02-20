@@ -3,10 +3,13 @@ const {
   addBabelPlugin,
   addBundleVisualizer,
   addBabelPreset,
+  babelInclude,
 } = require("customize-cra")
 const { ModuleFederationPlugin } = require("webpack").container
+const path = require("path")
 
 let config = override(
+  // babelInclude([path.resolve("src"), path.resolve("../three")]),
   (config) => {
     config.plugins.push(
       new ModuleFederationPlugin({
